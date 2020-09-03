@@ -1,0 +1,50 @@
+body{
+    background-color: #adff2f;
+    color: #006400;
+    font-family: Arial, sans-serif;
+}
+a{
+    color: #006400;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#doc-name{
+    text-align: center;
+}
+.prev-page{
+    text-align: left;
+}
+.text{
+    display: block;
+}
+img{
+    width: 300px;
+}
+.left-img{
+    float: left;
+    margin: 0 24px 22px 0;
+    padding: 0;
+}
+.right-img{
+    float: right;
+    margin: 0 24px 22px 0;
+    padding: 0;
+}
+.full-background{
+    background: url(../img/Vaasspons.jpg) repeat;
+}
+.first-par{
+    color: #adff2f;
+    font-style: oblique;
+}
+.second-par{
+    font-weight: bold;
+}
+.third-par>span{
+    color: #ff0000;
+}
