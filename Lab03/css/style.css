@@ -1,0 +1,26 @@
+body{
+    background: url(../img/background.jpg) no-repeat;
+    background-size: cover;
+    font-family: arial, sans-serif;
+    color: #000000;
+ }
+a{
+    text-decoration: none;
+    color: #263555;
+}
+p{
+    margin-left: 10px;
+}
+img{
+    margin-left: 20px;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#doc-name{
+    text-align: center;
+}

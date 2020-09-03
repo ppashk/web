@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="doc-name">
+            <h1>Лабораторна робота №3</h1>
+            <h2>Пашковський Павло Володимирович<br>Варіант №1</h2>
+        </div>
+        <p>
+            Необхідно розробити форму для введення результатів поточної сесії
+            у веб-систему. Необхідно заповнити наступні данні:
+        </p>
+        <ul>
+            <li>
+                дані про студента, включають ПІБ, назву групи (вибирається із
+                списку), оцінку за дисципліну (лише ціле значення від 0 до 100), дату
+                проведення заліку або іспиту;
+            </li>
+            <li>
+                дані про залік або іспит, включають назву дисципліни(вибирається
+                із списку), перемикач це залік чи іспит, прізвище викладача.
+            </li>
+        </ul>
+        <form action="" method="post">
+            <fieldset>
+                <legend>
+                    Студент
+                </legend>
+                <label>
+                    <input type="text" placeholder="ПІБ студента" name="name" required>
+                </label>
+                <label>
+                    <select name="group" required>
+                        <option selected disabled>Виберіть групу</option>
+                        <option>КН-12</option>
+                        <option>КН-22</option>
+                        <option>КН-32</option>
+                        <option>КН-42</option>
+                    </select>
+                </label>
+                <label>
+                    <input type="number" name="score" min="0" max="100"
+                           placeholder="" step="1" required/>
+                </label>
+                <label>
+                    <input type="date" name="date" placeholder="Виберіть дату" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Предмет
+                </legend>
+                <label>
+                    <select name="class" required>
+                        <option selected disabled>Назва дисципліни</option>
+                        <option>Веб</option>
+                        <option>ТСПП</option>
+                        <option>ОіСБД</option>
+                        <option>ОС</option>
+                    </select>
+                </label>
+                <p>
+                    <label><input name="exam" type="radio" value="exam"> Екзамен</label>
+                    <label><input name="exam" type="radio" value="test"> Іспит</label>
+                </p>
+                <label>
+                    <input type="text" placeholder="ПІБ викладача" name="teacherName" required>
+                </label>
+            </fieldset>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</body>
+</html>
